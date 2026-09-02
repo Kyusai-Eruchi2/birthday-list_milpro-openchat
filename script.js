@@ -1170,7 +1170,7 @@ form.addEventListener(
         // ==============================
 
         fetch(
-            "https://birthday-api.kyusai-eruchi.workers.dev/",
+            "https://birthday-api-2.kyusai-eruchi.workers.dev/",
             {
 
                 method: "POST",
