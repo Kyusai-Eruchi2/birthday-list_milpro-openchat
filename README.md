@@ -1,1 +1,1 @@
-# birthday-list_milpro-openchat
+# birthday-list

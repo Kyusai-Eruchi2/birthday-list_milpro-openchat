@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>誕生日リスト</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <h1>🎂 誕生日リスト</h1>
+
+    <p>
+        みんなの誕生日を登録できます。
+    </p>
+
+</header>
+
+
+<main>
+
+    <!-- ==============================
+         今日・次の誕生日
+         ============================== -->
+
+    <section
+        id="birthday-highlight"
+        class="birthday-highlight"
+    >
+
+        <h2 id="highlight-title">
+            🎂 誕生日情報
+        </h2>
+
+        <div id="highlight-content">
+
+            <p>読み込み中...</p>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+         誕生日一覧
+         ============================== -->
+
+    <section class="birthday-section">
+
+        <h2>🎉 誕生日一覧</h2>
+
+        <div id="birthday-list">
+
+            <p>
+                読み込み中...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         登録フォーム
+         ============================== -->
+
+    <section class="register-section">
+
+        <h2>📝 誕生日を登録</h2>
+
+
+        <form id="birthday-form">
+
+
+            <!-- 名前 -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    名前
+                </label>
+
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    maxlength="30"
+                    placeholder="名前を入力"
+                    autocomplete="off"
+                    required
+                >
+
+
+                <p
+                    id="name-error"
+                    class="error"
+                ></p>
+
+            </div>
+
+
+            <!-- 月 -->
+
+            <div class="form-group">
+
+                <label for="month">
+                    月
+                </label>
+
+
+                <input
+                    type="text"
+                    id="month"
+                    name="month"
+                    inputmode="numeric"
+                    maxlength="2"
+                    placeholder="1～12"
+                    autocomplete="off"
+                    required
+                >
+
+
+                <p
+                    id="month-error"
+                    class="error"
+                ></p>
+
+            </div>
+
+
+            <!-- 日 -->
+
+            <div class="form-group">
+
+                <label for="day">
+                    日
+                </label>
+
+
+                <input
+                    type="text"
+                    id="day"
+                    name="day"
+                    inputmode="numeric"
+                    maxlength="2"
+                    placeholder="1～31"
+                    autocomplete="off"
+                    required
+                >
+
+
+                <p
+                    id="day-error"
+                    class="error"
+                ></p>
+
+            </div>
+
+
+            <button
+                type="submit"
+                id="submit-button"
+            >
+                登録する
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+</main>
+
+<footer>
+    <p>©2026 Kyusai-Eruchi</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

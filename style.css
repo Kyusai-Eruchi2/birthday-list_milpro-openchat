@@ -1,0 +1,419 @@
+/* ==============================
+   基本設定
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        "MS PMincho",
+        serif;
+
+    background: #f7f7f7;
+
+    color: #333;
+
+}
+
+
+/* ==============================
+   ヘッダー
+   ============================== */
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: white;
+
+}
+
+
+header h1 {
+
+    margin: 0 0 10px;
+
+}
+
+
+header p {
+
+    margin: 0;
+
+}
+
+
+/* ==============================
+   メイン
+   ============================== */
+
+main {
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+}
+
+
+/* ==============================
+   セクション
+   ============================== */
+
+section {
+
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+h2 {
+
+    margin-top: 0;
+
+}
+
+
+/* ==============================
+   月ごとの誕生日一覧
+   ============================== */
+
+.birthday-month {
+
+    margin-bottom: 10px;
+
+}
+
+
+/* 月の見出し */
+
+.birthday-month-header {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f3f3f3;
+
+    color: #333;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 0.2s;
+
+}
+
+
+.birthday-month-header:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* 矢印 */
+
+.month-arrow {
+
+    display: inline-block;
+
+    width: 20px;
+
+}
+
+
+/* 月の中身 */
+
+.birthday-month-list {
+
+    margin-top: 5px;
+
+    color: #333;
+
+}
+
+
+/* 個々の誕生日 */
+
+.birthday-month-list .birthday-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 10px 16px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+/* 日付 */
+
+.birthday-date {
+
+    min-width: 70px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==============================
+   フォーム
+   ============================== */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+}
+
+
+input:focus {
+
+    outline: none;
+
+    border-color: #777;
+
+}
+
+
+/* ==============================
+   エラー
+   ============================== */
+
+.error {
+
+    min-height: 20px;
+
+    margin: 5px 0 0;
+
+    color: #d00;
+
+    font-size: 14px;
+
+}
+
+
+/* ==============================
+   ボタン
+   ============================== */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    opacity: 0.85;
+
+}
+
+
+button:disabled {
+
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+}
+
+/* ==============================
+   今日・次の誕生日
+   ============================== */
+
+.birthday-highlight {
+    text-align: center;
+}
+
+
+/* 見出し */
+
+.birthday-highlight h2 {
+    margin-bottom: 20px;
+}
+
+
+/* 今日の誕生日 */
+
+.today-birthday-name {
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* お祝いメッセージ */
+
+.birthday-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* 次の誕生日 */
+
+.next-birthday-name {
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 日付 */
+
+.next-birthday-date {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+
+/* カウントダウン */
+
+.birthday-countdown {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* カウントダウン内の数字 */
+
+.countdown-number {
+    font-size: 28px;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+
+    .birthday-highlight {
+        padding: 20px;
+    }
+
+
+    .today-birthday-name,
+    .next-birthday-name {
+        font-size: 18px;
+    }
+
+
+    .birthday-countdown {
+        font-size: 18px;
+    }
+
+
+    .countdown-number {
+        font-size: 24px;
+    }
+
+}
+
+/* ==============================
+   フッター
+   ============================== */
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
